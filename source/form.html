@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
-<head class="page-form">
+<head>
   <meta charset="UTF-8">
-  <title>Форма</title>
+  <title>Catalog</title>
 </head>
 
 <body class="page__body">
@@ -15,24 +15,24 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item item">
-            <a class="item__link-main--active link-main" href="index.html">Главная
+        <ul class="main-nav-list">
+          <li class="nav-item item">
+            <a class="item-link link-main" href="index.html">Главная
               <span class="visually-hidden">Главная страница</span>
             </a>
           </li>
-          <li class="site-list__item item">
-            <a class="item__link-main--active link-photos-and-videos" href="catalog.html">Фото и видео
+          <li class="nav-item item">
+            <a class="item-link link-photos-and-videos" href="catalog.html">Фото и видео
               <span class="visually-hidden">Страница фото и видео</span>
             </a>
           </li>
-          <li class="site-list__item item">
-            <a class="item__link-main--active link-response-form" href="form.html">Форма отзыва
+          <li class="nav-item item">
+            <a class="item-link link-response-form" href="form.html">Форма отзыва
               <span class="visually-hidden">Форма отзыва</span>
             </a>
           </li>
-          <li class="site-list__item item">
-            <a class="item__link-main--active link-academy" href="https://htmlacademy.ru/">HTML academy
+          <li class="nav-item item">
+            <a class="item-link link-academy" href="https://htmlacademy.ru/">HTML academy
               <span class="visually-hidden">Сайт HTML академии</span>
             </a>
           </li>
@@ -41,104 +41,89 @@
     </nav>
   </header>
   <main class="main-container">
-      <div class="response">
-        <h1 class="response-title">Оставьте свой отзыв</h1>
-        <p class="response-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
-          вами достопримечательностях</p>
-      </div>
-    <section class="form">
-      <h2 class="visually-hidden">Форма отзыва.</h2>
-      <form class="form-response" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form-response">
-          <legend class="form-response__title">Представьтесь:</legend>
-          <ul class="representation-list representation">
-            <li class="representation__item name">
-              <label for="name">ИМЯ*:</label>
-              <input type="text" id="name" name="name" placeholder="Пётр" required>
-            </li>
-            <li class="representation__item surname">
-              <label for="surname">ФАМИЛИЯ*:</label>
-              <input type="text" id="surname" placeholder="Пустота" required>
-            </li>
-            <li class="representation__item middle-name">
-              <label for="middle-name">Отчество:</label>
-              <input type="text" id="middle-name" placeholder="Викторович">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-contact">
-          <legend class="form-contact__title">Контактная информация:</legend>
-          <ul class="contact-list contact">
-            <li class="contact__item contact-phone-number">
-              <label for="phone-number">Контактный телефон*:</label>
-              <input type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
-              <span class="phone-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
-                    fill="#010101" />
-                </svg>
-              </span>
-            </li>
-            <li class="contact__item contact-email">
-              <label for="email">Электронная почта*:</label>
-              <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
-              <span class="email-icon">
-                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
-                    fill="black" />
-                </svg>
-              </span>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="impression">
-          <legend class="impression__title">ВАше Общее впечатление:</legend>
-          <ul class="general-impression impression-list">
-            <li class="impression-list__item impression-item">
-              <input type="radio" id="positive" name="your-impression" checked>
-              <label for="positive">Скорее положительное</label>
-            </li>
-            <li class="impression-list__item impression-item">
-              <input type="radio" id="negative" name="your-impression">
-              <label for="negative">Скорее отрицательное</label>
-            </li>
-            <li class="impression-list__item impression-item">
-              <input type="radio" id="no-answer" name="your-impression">
-              <label for="no-answer">Затрудняюсь ответить</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-attractions">
-          <legend class="form-attractions__title">посещенные достопримечательности:</legend>
-          <ul class="form-attractions__list attractions-list">
-            <li class="attractions-list__item">
-              <input type="checkbox" id="devil's-bridge" name="devil's-bridge" checked>
-              <label for="devil's-bridge">Мост Дьявола</label>
-            </li>
-            <li class="attractions-list__item">
-              <input type="checkbox" id="gore-bell" name="gore-bell" checked>
-              <label for="gore-bell">Гора-Колокол</label>
-            </li>
-            <li class="attractions-list__item">
-              <input type="checkbox" id="slide-park" name="slide-park" checked>
-              <label for="slide-park">Слайд-парк</label>
-            </li>
-            <li class="attractions-list__item">
-              <input type="checkbox" id="red-rocks" name="red-rocks">
-              <label for="red-rocks">Красные скалы</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-emotions">
-          <legend class="form-emotions__title">Опишите свои эмоции:</legend>
-          <textarea class="describe-emotions" name="describe-your-emotions" cols="25"
-            rows="5">Опишите подробно все свои восторги</textarea>
-        </fieldset>
-        <button class="describe-emotions__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-        <p class="required-field">* — обязательные поля</p>
-      </form>
+    <div class="photos-and-videos">
+      <h1 class="photos-and-videos-title">Фото и видео</h1>
+      <p class="photos-and-videos-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+        забыть о политике и экономике.</p>
+    </div>
+    <section class="photos">
+      <h2 class="visually-hidden">Каталог фотографий</h2>
+      <ul class="photos-list">
+        <li class="photos-list__item">
+          <img class="photos-list__image" src="img/photos/non-native-expanses.jpg" width="280" height="280"
+            alt="Неродные просторы.">
+          <p class="photos-list__title">Неродные просторы</p>
+          <p class="photos-list__author">Автор фото: Борис</p>
+          <button class="reactions button" type="button">
+            <span class="reactions__like">
+              <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.4 3.6L11.8 6.5L11.2 9H13.7H19.9V11C19.9 11 19.9 11 19.9 11.1L17 18H8V8L12.4 3.6ZM2 10V18V10ZM13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0ZM4 8H0V20H4V8Z"
+                  fill="#81B3D2" />
+              </svg>
+            </span>
+          </button>
+          <span class="reactions-count">1350</span>
+        </li>
+        <li class="photos-list__item">
+          <img class="photos-list__image" src="img/photos/local-vegetation.jpg" width="280" height="280"
+            alt="Местная растительность.">
+          <p class="photos-list__title">Местная растительность</p>
+          <p class="photos-list__author">Автор фото: Сергей</p>
+          <button class="reactions button" type="button">
+            <span class="reactions__like">
+              <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.4 3.6L11.8 6.5L11.2 9H13.7H19.9V11C19.9 11 19.9 11 19.9 11.1L17 18H8V8L12.4 3.6ZM2 10V18V10ZM13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0ZM4 8H0V20H4V8Z"
+                  fill="#81B3D2" />
+              </svg>
+            </span>
+          </button>
+          <span class="reactions-count">143</span>
+        </li>
+        <li class="photos-list__item">
+          <img class="photos-list__image" src="img/photos/road-to-the-north.jpg" width="280" height="280"
+            alt="Дорога на север.">
+          <p class="photos-list__title">Дорога на север</p>
+          <p class="photos-list__author">Автор фото: Петр</p>
+          <button class="reactions button" type="button">
+            <span class="reactions__like">
+              <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.4 3.6L11.8 6.5L11.2 9H13.7H19.9V11C19.9 11 19.9 11 19.9 11.1L17 18H8V8L12.4 3.6ZM2 10V18V10ZM13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0ZM4 8H0V20H4V8Z"
+                  fill="#81B3D2" />
+              </svg>
+            </span>
+          </button>
+          <span class="reactions-count">96</span>
+        </li>
+        <li class="photos-list__item">
+          <img class="photos-list__image" src="img/photos/bridge-of-a-devil.jpg" width="280" height="280"
+            alt="Мост дьявола.">
+          <p class="photos-list__title">Мост дьявола</p>
+          <p class="photos-list__author">Автор фото: Антон</p>
+          <button class="reactions button" type="button">
+            <span class="reactions__like">
+              <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.4 3.6L11.8 6.5L11.2 9H13.7H19.9V11C19.9 11 19.9 11 19.9 11.1L17 18H8V8L12.4 3.6ZM2 10V18V10ZM13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0ZM4 8H0V20H4V8Z"
+                  fill="#81B3D2" />
+              </svg>
+            </span>
+          </button>
+          <span class="reactions-count">254</span>
+        </li>
+      </ul>
+    </section>
+    <section class="videos">
+      <h2 class="visually-hidden">Каталог видео</h2>
+      <h2 class="video-title">Все еще сомневаетесь?</h2>
+      <p class="video-descriotion">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+        очередной раз!</p>
+      <video src="/source/img/video/video-mobile.jpg" width="280" height="177">
+
+      </video>
+      <span class="play">Добавит видео кнопку</span>
     </section>
   </main>
   <footer class="main-footer">
