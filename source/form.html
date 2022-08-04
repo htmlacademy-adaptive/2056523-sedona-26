@@ -12,7 +12,7 @@
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav-list">
           <li class="main-nav-list__item">
@@ -39,7 +39,7 @@
     </div>
     <form class="recall-form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="be-provided">
-        <legend class="be-provided__title">Представьтесь:</legend>
+        <legend class="recall-form__title">Представьтесь:</legend>
         <ul class="be-provided__list">
           <li class="be-provided__item">
             <label for="be-provided__name">ИМЯ*:</label>
@@ -56,7 +56,7 @@
         </ul>
       </fieldset>
       <fieldset class="contact">
-        <legend class="contact__title">Контактная информация:</legend>
+        <legend class="recall-form__title">Контактная информация:</legend>
         <ul class="contact__list">
           <li class="contact__item">
             <label for="phone-number">Контактный телефон*:</label>
@@ -83,7 +83,7 @@
         </ul>
       </fieldset>
       <fieldset class="impression">
-        <legend class="impression__title">ВАше Общее впечатление:</legend>
+        <legend class="recall-form__title">ВАше Общее впечатление:</legend>
         <ul class="impression__list">
           <li class="impression__item">
             <input type="radio" id="positive" name="your-impression" checked>
@@ -100,7 +100,7 @@
         </ul>
       </fieldset>
       <fieldset class="attractions">
-        <legend class="attractions__title">посещенные достопримечательности:</legend>
+        <legend class="recall-form__title">посещенные достопримечательности:</legend>
         <ul class="attractions__list">
           <li class="attractions__item">
             <input type="checkbox" id="devil's-bridge" name="devil's-bridge" checked>
@@ -180,16 +180,17 @@
       </a>
     </div>
   </footer>
-  <div class="modal-container-error">
-    <p class="modal-title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-    <p class="modal-description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal-button button" type="button">OK</button>
+  <div class="modal-container modal-container--error">
+    <p class="modal-container__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+    <p class="modal-container__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal-container__button button" type="button">OK</button>
   </div>
-  <div class="modal-container-sent">
-    <p class="modal-title">Ваш отзыв отправлен!</p>
-    <p class="modal-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем
+  <div class="modal-container modal-container--sent">
+    <p class="modal-container__title">Ваш отзыв отправлен!</p>
+    <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+      опубликуем
       его на сайте.</p>
-    <button class="modal-button button" type="button">ЗАКРЫТЬ ОКНО</button>
+    <button class="modal-container__button button" type="button">ЗАКРЫТЬ ОКНО</button>
   </div>
 </body>
 
