@@ -46,16 +46,16 @@
         <legend class="recall-form__title">Представьтесь:</legend>
         <ul class="recall-form__list">
           <li class="recall-form__item">
-            <label class="recall-form-question" for="name">ИМЯ*:</label>
-            <input class="recall-form-data-input" type="text" id="name" name="name" placeholder="Пётр" required>
+            <label class="recall-form__question" for="name">ИМЯ*:</label>
+            <input class="recall-form__contact-input" type="text" id="name" name="name" placeholder="Пётр" required>
           </li>
           <li class="recall-form__item">
-            <label class="recall-form-question" for="surname">ФАМИЛИЯ*:</label>
-            <input class="recall-form-data-input" type="text" id="surname" placeholder="Пустота" required>
+            <label class="recall-form__question" for="surname">ФАМИЛИЯ*:</label>
+            <input class="recall-form__contact-input" type="text" id="surname" placeholder="Пустота" required>
           </li>
           <li class="recall-form__item">
-            <label class="recall-form-question" for="middle-name">Отчество:</label>
-            <input class="recall-form-data-input" type="text" id="middle-name" placeholder="Викторович">
+            <label class="recall-form__question" for="middle-name">Отчество:</label>
+            <input class="recall-form__contact-input" type="text" id="middle-name" placeholder="Викторович">
           </li>
         </ul>
       </fieldset>
@@ -63,13 +63,11 @@
         <legend class="recall-form__title">Контактная информация:</legend>
         <ul class="recall-form__list">
           <li class="recall-form__item">
-            <label class="recall-form-question" for="phone-number">Контактный телефон*:</label>
-          </li>
-          <li class="recall-form__item">
-            <input class="recall-form-data-input" type="tel" id="phone-number" name="phone-number"
+            <label class="recall-form__question" for="phone-number">Контактный телефон*:</label>
+            <input class="recall-form__data-input" type="tel" id="phone-number" name="phone-number"
               placeholder="Введите телефон" required>
             <span class="recall-form__icon">
-              <svg class="recall-form-image" width="18" height="18" viewBox="0 0 18 18" fill="none"
+              <svg class="recall-form__image" width="18" height="18" viewBox="0 0 18 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
@@ -78,13 +76,11 @@
             </span>
           </li>
           <li class="recall-form__item">
-            <label class="recall-form-question" for="email">Электронная почта*:</label>
-          </li>
-          <li class="recall-form__item">
-            <input class="recall-form-data-input" type="email" id="email" name="email" placeholder="Введите e-mail"
+            <label class="recall-form__question" for="email">Электронная почта*:</label>
+            <input class="recall-form__data-input" type="email" id="email" name="email" placeholder="Введите e-mail"
               required>
             <span class="recall-form__icon">
-              <svg class="recall-form-image" width="18" height="18" viewBox="0 0 16 12" fill="none"
+              <svg class="recall-form__image" width="18" height="18" viewBox="0 0 16 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
@@ -98,16 +94,16 @@
         <legend class="recall-form__title">ВАше Общее впечатление:</legend>
         <ul class="recall-form__list">
           <li class="recall-form__item-impression">
-            <input class="recall-form-data-input" type="radio" id="positive" name="your-impression" checked>
-            <label class="choice-of-impression" for="positive">Скорее положительное</label>
+            <input class="recall-form__data-input" type="radio" id="positive" name="your-impression" checked>
+            <label class="recall-form__choice-of-impression" for="positive">Скорее положительное</label>
           </li>
           <li class="recall-form__item-impression">
-            <input class="recall-form-data-input" type="radio" id="negative" name="your-impression">
-            <label class="choice-of-impression" for="negative">Скорее отрицательное</label>
+            <input class="recall-form__data-input" type="radio" id="negative" name="your-impression">
+            <label class="recall-form__choice-of-impression" for="negative">Скорее отрицательное</label>
           </li>
           <li class="recall-form__item-impression">
-            <input class="recall-form-data-input" type="radio" id="no-answer" name="your-impression">
-            <label class="choice-of-impression" for="no-answer">Затрудняюсь ответить</label>
+            <input class="recall-form__data-input" type="radio" id="no-answer" name="your-impression">
+            <label class="recall-form__choice-of-impression" for="no-answer">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
@@ -115,20 +111,20 @@
         <legend class="recall-form__title">посещенные достопримечательности:</legend>
         <ul class="recall-form__list">
           <li class="recall-form__item">
-            <input class="recall-form-data-input" type="checkbox" id="devil's-bridge" name="devil's-bridge" checked>
-            <label class="choice-of-impression" for="devil's-bridge">Мост Дьявола</label>
+            <input class="recall-form__data-input" type="checkbox" id="devil's-bridge" name="devil's-bridge" checked>
+            <label class="recall-form__sights" for="devil's-bridge">Мост Дьявола</label>
           </li>
           <li class="recall-form__item">
-            <input class="recall-form-data-input" type="checkbox" id="gore-bell" name="gore-bell" checked>
-            <label class="choice-of-impression" for="gore-bell">Гора-Колокол</label>
+            <input class="recall-form__data-input" type="checkbox" id="gore-bell" name="gore-bell" checked>
+            <label class="recall-form__sights" for="gore-bell">Гора-Колокол</label>
           </li>
           <li class="recall-form__item">
             <input class="recall-form-data-input" type="checkbox" id="slide-park" name="slide-park" checked>
-            <label class="choice-of-impression" for="slide-park">Слайд-парк</label>
+            <label class="recall-form__sights" for="slide-park">Слайд-парк</label>
           </li>
           <li class="recall-form__item">
             <input class="recall-form-data-input" type="checkbox" id="red-rocks" name="red-rocks">
-            <label class="choice-of-impression" for="red-rocks">Красные скалы</label>
+            <label class="recall-form__sights" for="red-rocks">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
