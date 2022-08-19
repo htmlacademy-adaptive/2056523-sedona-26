@@ -51,3 +51,29 @@
   background-color: #ffffff;
   fill: #e5e5e5;
 }
+
+@media (min-width: @tablet-width) {
+  .photos-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos-list__item {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .photos-list__first {
+    width: 100%;
+  }
+
+  .photos-list__image {
+    margin-bottom: 0;
+  }
+
+  .photos-list__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
