@@ -1,3 +1,14 @@
 .footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 29px 80px 29px 84px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-social {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
