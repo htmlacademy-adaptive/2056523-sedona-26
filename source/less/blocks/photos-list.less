@@ -61,6 +61,14 @@
   .photos-list__item {
     width: 50%;
     margin-bottom: 0;
+
+    &--color-gray {
+      background-color: #f2f2f2;
+    }
+
+    &:nth-child(3) {
+      background-color: #eaeaea;
+    }
   }
 
   .photos-list__first {
@@ -75,5 +83,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .photos-list__reactions {
+    background-color: transparent;
+  }
+
+  .photos-list__reactions-icon {
+    fill: rgba(0, 0, 0, 0.3);
   }
 }
