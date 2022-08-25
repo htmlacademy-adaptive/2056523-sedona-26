@@ -5,12 +5,39 @@
 }
 
 .photos-list__item {
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 .photos-list__image {
   margin-bottom: 15px;
-  width: 100%;
+
+  &-expanses {
+    height: 280px;
+    background-image: url("../img/photos/non-native-expanses-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-vegetation {
+    height: 280px;
+    background-image: url("../img/photos/local-vegetation-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-north {
+    height: 280px;
+    background-image: url("../img/photos/road-to-the-north-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-devil {
+    height: 280px;
+    background-image: url("../img/photos/bridge-of-a-devil-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .photos-list__title {
@@ -60,7 +87,7 @@
 
   .photos-list__item {
     width: 50%;
-    margin-bottom: 0;
+    margin: 0;
 
     &--color-gray {
       background-color: #f2f2f2;
@@ -77,13 +104,53 @@
 
   .photos-list__image {
     margin-bottom: 0;
+
+    &-expanses {
+      height: 400px;
+      background-image: url("../img/photos/non-native-expanses-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &-vegetation {
+      height: 267px;
+      background-image: url("../img/photos/local-vegetation-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &-north {
+      height: 267px;
+      background-image: url("../img/photos/road-to-the-north-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &-devil {
+      height: 267px;
+      background-image: url("../img/photos/bridge-of-a-devil-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   .photos-list__wrapper {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    height: 80px;
   }
+
+  .photos-list__block-author {
+    position: absolute;
+    left: 20px;
+  }
+
+  .photos-list__block-liked {
+    position: absolute;
+    right: 20px;
+  }
+
 
   .photos-list__reactions {
     background-color: transparent;

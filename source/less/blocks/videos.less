@@ -1,3 +1,7 @@
+.videos {
+  padding: 17px 28px 0;
+}
+
 .videos__title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -7,9 +11,8 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .videos__description {
@@ -28,17 +31,18 @@
 
 
 .videos__image {
-  width: 100%;
+  height: 177px;
+  background-image: url("../img/video/video-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
-@media (min-width: @desctop-width) {
+@media (min-width: @tablet-width) {
   .videos__image {
-    width: 800px;
     height: 500px;
-  }
-
-  .videos {
-    padding: 62px 200px 120px;
+    background-image: url("../img/video/video-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
