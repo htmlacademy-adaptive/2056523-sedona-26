@@ -16,7 +16,23 @@
 
 
 .page__container {
-  max-width: 1200px;
+  width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page__container {
+    width: 768px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
 }
