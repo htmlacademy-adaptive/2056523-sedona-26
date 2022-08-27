@@ -72,9 +72,20 @@
 
 
 .advantages__image {
-  display: block;
-  width: 100%;
+  &-real-town {
+    height: 260px;
+    background-image: url("../img/advantages-mobile/town-of-sedona.jpg");
+    background-repeat: no-repeat;
+  }
+
+
+  &-devil-bridge {
+    height: 260px;
+    background-image: url("../../img/advantages-mobile/bridge-devil.jpg");
+    background-repeat: no-repeat;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .advantages__item {
@@ -83,7 +94,19 @@
   }
 
   .advantages__image {
-    width: 512px;
+    &-real-town {
+      height: 256px;
+      width: 512px;
+      background-image: url("../img/advantages-tablet/town-of-sedona-tablet.jpg");
+      background-repeat: no-repeat;
+    }
+
+    &-devil-bridge {
+      width: 512px;
+      height: 256px;
+      background-image: url("../img/advantages-tablet/bridge-devil-tablet.jpg");
+      background-repeat: no-repeat;
+    }
   }
 
   .advantages__enclosed-list {
