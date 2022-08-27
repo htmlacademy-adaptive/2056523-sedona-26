@@ -1,4 +1,5 @@
 .main-container__image {
+  position: relative;
   width: 320px;
   height: 389px;
   background-image: url("../img/background/sedona-mountains-mobile.jpg");
@@ -6,6 +7,12 @@
 }
 
 .main-container__welcome {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
   width: 282px;
   height: 214px;
   background-image: url("../img/welcome-sedona.png");
@@ -14,8 +21,35 @@
 
 
 .main-container__triangle {
+  position: absolute;
+  bottom: 0;
   width: 320px;
   height: 57px;
   background-image: url("../img/advantages-mobile/intro-triangle.svg");
   background-repeat: no-repeat;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-container__image {
+    width: 768px;
+    height: 518px;
+    background-image: url("../img/advantages-tablet/sedona-mountains-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-container__welcome {
+    width: 461px;
+    height: 350px;
+    background-image: url("../img/advantages-tablet/welcome-sedona-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  .main-container__triangle {
+    bottom: -1px;
+    width: 768px;
+    height: 57px;
+    background-image: url("../img/advantages-tablet/intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+  }
 }
