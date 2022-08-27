@@ -1,9 +1,30 @@
 .main-container__image {
   position: relative;
   width: 320px;
-  height: 389px;
-  background-image: url("../img/background/sedona-mountains-mobile.jpg");
+  height: 214px;
+  background-image: url("../img/form-mobile/sedona-mountains-mobile-form.jpg");
   background-repeat: no-repeat;
+}
+
+.main-container__image-sedona {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 229px;
+  height: 39px;
+  background-image: url("../img/form-mobile/sedona.svg");
+  background-repeat: no-repeat;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav {
+  height: 56px;
 }
 
 .main-container__welcome {
@@ -31,6 +52,10 @@
 
 
 @media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: initial;
+  }
+
   .main-container__image {
     width: 768px;
     height: 518px;
@@ -59,7 +84,14 @@
   .main-container__image {
     width: 1200px;
     height: 518px;
-    background-image: url("../../img/advantages-desktop/sedona-mountains-desktop.jpg");
+    background-image: url("../img/advantages-desktop/sedona-mountains-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-container__image-form {
+    width: 768px;
+    height: 290px;
+    background-image: url("../../img/form-tablet/sedona-mountains-tablet-form.jpg");
     background-repeat: no-repeat;
   }
 
