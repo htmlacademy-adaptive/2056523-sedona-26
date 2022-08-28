@@ -1,8 +1,17 @@
 .main-container__image {
   position: relative;
   width: 320px;
+  height: 389px;
+  background-image: url("../img/background/sedona-mountains-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-container__image-form {
+  position: relative;
+  top: 1px;
+  width: 320px;
   height: 214px;
-  background-image: url("../img/form-mobile/sedona-mountains-mobile-form.jpg");
+  background-image: url("../img/background/sedona-mountains-form.jpg");
   background-repeat: no-repeat;
 }
 
@@ -19,13 +28,6 @@
   background-repeat: no-repeat;
 }
 
-.main-nav__wrapper {
-  display: none;
-}
-
-.main-nav {
-  height: 56px;
-}
 
 .main-container__welcome {
   position: absolute;
@@ -37,6 +39,19 @@
   width: 282px;
   height: 214px;
   background-image: url("../img/welcome-sedona.png");
+  background-repeat: no-repeat;
+}
+
+.main-container__welcome-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 229px;
+  height: 39px;
+  background-image: url("../img/form-mobile/sedona.svg");
   background-repeat: no-repeat;
 }
 
@@ -52,10 +67,6 @@
 
 
 @media (min-width: @tablet-width) {
-  .main-nav__wrapper {
-    display: initial;
-  }
-
   .main-container__image {
     width: 768px;
     height: 518px;
@@ -63,10 +74,24 @@
     background-repeat: no-repeat;
   }
 
+  .main-container__image-form {
+    width: 768px;
+    height: 290px;
+    background-image: url("../img/form-tablet/sedona-mountains-tablet-form.jpg");
+    background-repeat: no-repeat;
+  }
+
   .main-container__welcome {
     width: 461px;
     height: 350px;
     background-image: url("../img/advantages-tablet/welcome-sedona-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  .main-container__welcome-form {
+    width: 457px;
+    height: 78px;
+    background-image: url("../img/form-tablet/sedona-tablet.svg");
     background-repeat: no-repeat;
   }
 
@@ -89,9 +114,9 @@
   }
 
   .main-container__image-form {
-    width: 768px;
-    height: 290px;
-    background-image: url("../../img/form-tablet/sedona-mountains-tablet-form.jpg");
+    width: 1200px;
+    height: 301px;
+    background-image: url("../img/form-desktop/sedona-mountains-desktop-form.jpg");
     background-repeat: no-repeat;
   }
 
