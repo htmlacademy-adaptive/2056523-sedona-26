@@ -1,4 +1,5 @@
 .hash-tag {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -9,4 +10,11 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  margin-bottom: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .hash-tag {
+    margin-bottom: 0;
+  }
 }

@@ -1,7 +1,7 @@
 .wrapper-advantages {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  padding: 33px 22px 4px 16px;
+  padding: 33px 22px 40px 16px;
   text-align: center;
   color: #ffffff;
 }
@@ -14,8 +14,6 @@
 .wrapper-advantages__title {
   margin: 0;
   margin-bottom: 11px;
-
-  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
@@ -23,7 +21,6 @@
 .wrapper-advantages__number {
   margin: 0;
   margin-bottom: 17px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -31,9 +28,24 @@
 
 .wrapper-advantages__description {
   margin: 0;
-  margin-bottom: 40px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .wrapper-advantages {
+    width: 256px;
+    box-sizing: border-box;
+    padding: 40px 32px 44px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .wrapper-advantages {
+    width: 400px;
+    padding: 47px 52px 56px 53px;
+  }
 }

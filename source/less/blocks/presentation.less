@@ -1,6 +1,6 @@
 .presentation {
   position: relative;
-  padding: 32px 20px 18px 16px;
+  padding: 33px 20px 20px;
   text-align: center;
 }
 
@@ -12,7 +12,6 @@
   line-height: 26px;
   color: #000000;
   padding: 0;
-  margin: 0;
   margin: 0 0 35px;
 }
 
@@ -23,14 +22,22 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin: 0;
   padding: 0;
   margin: 0 0 16px;
 }
 
-.presentation__left {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  fill: #c4c4c4;
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    width: 435px;
+    margin: 0 auto;
+  }
+
+  .presentation__title {
+    margin-bottom: 20px;
+  }
+
+  .presentation__text {
+    margin-bottom: 102px;
+  }
 }

@@ -2,15 +2,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0;
-  border: none;
-  background-color: #ffffff;
+  text-align: center;
 }
 
 .main-nav-list__link {
@@ -26,4 +18,16 @@
 
 .main-nav-list__item {
   padding: 18px 0 17px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-nav-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

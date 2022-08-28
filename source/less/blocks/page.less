@@ -1,8 +1,4 @@
 .page {
-  max-width: 1280px;
-  padding: 0 40px;
-  background-color: #e7e5e5;
-
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -15,5 +11,28 @@
 .page__body {
   margin: 0;
   padding: 0;
+  background-color: #e7e5e5;
+}
+
+
+.page__container {
+  width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page__container {
+    width: 768px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
 }

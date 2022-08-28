@@ -1,3 +1,7 @@
+.videos {
+  padding: 17px 28px 0;
+}
+
 .videos__title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -7,9 +11,8 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .videos__description {
@@ -24,4 +27,42 @@
 
   margin: 0;
   margin-bottom: 38px;
+}
+
+
+.videos__image {
+  width: 280px;
+  height: 177px;
+  background-image: url("../img/catalog-mobile/video-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+
+@media (min-width: @tablet-width) {
+  .videos {
+    padding: 0 60px;
+  }
+
+
+  .videos__image {
+    width: 648px;
+    height: 500px;
+    background-image: url("../img/catalog-tablet/video-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .videos {
+    padding: 0;
+  }
+
+  .videos__image {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/catalog-desktop/video-desktop.jpg");
+    background-repeat: no-repeat;
+  }
 }
