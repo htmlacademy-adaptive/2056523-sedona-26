@@ -31,18 +31,38 @@
 
 
 .videos__image {
+  width: 280px;
   height: 177px;
-  background-image: url("../img/video/video-mobile.jpg");
+  background-image: url("../img/catalog-mobile/video-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 
 @media (min-width: @tablet-width) {
+  .videos {
+    padding: 0 60px;
+  }
+
+
   .videos__image {
+    width: 648px;
     height: 500px;
-    background-image: url("../img/video/video-tablet.jpg");
+    background-image: url("../img/catalog-tablet/video-tablet.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .videos {
+    padding: 0;
+  }
+
+  .videos__image {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/catalog-desktop/video-desktop.jpg");
+    background-repeat: no-repeat;
   }
 }
