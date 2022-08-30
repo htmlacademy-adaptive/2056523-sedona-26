@@ -30,9 +30,39 @@
   margin: 0;
 }
 
+br {
+  display: none;
+}
+
 .search__find-hotel {
   display: inline-block;
   width: 186px;
   padding: 16px 49px;
   background-color: #81b3d2;
+}
+
+@media (min-width: @tablet-width) {
+  .search {
+    padding: 61px 155px 58px;
+  }
+
+  .search__wrapper {
+    width: 435px;
+    height: 100px;
+  }
+
+  .search__title {
+    font-size: 30px;
+    margin-bottom: 39px;
+  }
+
+  .search__description {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .search__find-hotel {
+    width: 216px;
+    padding: 16px 121px;
+  }
 }
