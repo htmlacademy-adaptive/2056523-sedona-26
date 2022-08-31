@@ -1,48 +1,73 @@
 .presentation {
-  padding: 32px 20px 18px;
+  padding: 36px 20px 28px;
+}
+
+.presentation__wrapper-form {
+  width: 280px;
   text-align: center;
 }
 
+
 .presentation__title {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   padding: 0;
-  margin: 0 0 35px;
+  margin: 0 0 24px;
+  text-align: center;
 }
 
 .presentation__text {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  text-align: center;
   color: #333333;
   padding: 0;
-  margin: 0 0 16px;
+  margin: 0;
+}
+
+.presentation__title-form {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.presentation__text-form {
+  font-weight: 400;
+  margin: 0;
 }
 
 
 @media (min-width: @tablet-width) {
   .presentation {
-    padding: 47px 124px 55px;
+    padding: 64px 166px 102px 167px;
+  }
+
+  .presentation__title {
+    font-size: 21px;
   }
 
   .presentation__wrapper {
     width: 520px;
     height: 103px;
-    margin: 0 auto;
   }
 
-  .presentation__title {
-    margin-bottom: 38px;
+  .presentation__wrapper-form {
+    width: 435px;
+    height: 94px;
   }
 
-  .presentation__text {
+  .presentation__title-form {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .presentation__text-form {
     margin: 0;
+    line-height: 24px;
   }
 }
 
@@ -58,5 +83,9 @@
 
   .presentation__title {
     margin-bottom: 39px;
+  }
+
+  .presentation__text {
+    text-align: center;
   }
 }

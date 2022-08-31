@@ -40,12 +40,15 @@
         <div class="main-container__triangle"></div>
       </div>
       <div class="presentation">
-        <h1 class="presentation__title">Оставьте свой отзыв</h1>
-        <p class="presentation__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
-          вами достопримечательностях</p>
+        <div class="presentation__wrapper-form">
+          <h1 class="presentation__title-form">Оставьте свой отзыв</h1>
+          <p class="presentation__text-form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных
+            вами достопримечательностях</p>
+        </div>
       </div>
       <form class="recall-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="recall-form__info">
+        <fieldset class="recall-form__info recall-form__block-1">
           <legend class="recall-form__title">Представьтесь:</legend>
           <ul class="recall-form__list">
             <li class="recall-form__item">
@@ -62,7 +65,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="recall-form__info">
+        <fieldset class="recall-form__info recall-form__block-2">
           <legend class="recall-form__title">Контактная информация:</legend>
           <ul class="recall-form__list">
             <li class="recall-form__item">
@@ -93,7 +96,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="recall-form__info recall-form__info--new-width">
+        <fieldset class="recall-form__info recall-form__block-3">
           <legend class="recall-form__title">ВАше Общее впечатление:</legend>
           <ul class="recall-form__list">
             <li class="recall-form__item-impression">
@@ -110,7 +113,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="recall-form__info recall-form__info--new-width">
+        <fieldset class="recall-form__info recall-form__block-4">
           <legend class="recall-form__title">посещенные достопримечательности:</legend>
           <ul class="recall-form__list">
             <li class="recall-form__item">
@@ -131,12 +134,14 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="recall-form__info recall-form__info--new-width">
+        <fieldset class="recall-form__info recall-form__block-5">
           <legend class="recall-form__title">Опишите свои эмоции:</legend>
           <textarea class="recall-form__describe" name="describe-your-emotions" cols="25"
             rows="5">Опишите подробно все свои восторги</textarea>
-          <button class="recall-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-          <p class="recall-form__required-field">* — обязательные поля</p>
+          <div class="recall-form__info-wrapper">
+            <button class="recall-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <p class="recall-form__required-field">* — обязательные поля</p>
+          </div>
         </fieldset>
       </form>
     </main>
@@ -189,16 +194,19 @@
       </div>
     </footer>
     <div class="modal-container modal-container--error">
-      <p class="modal-container__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-      <p class="modal-container__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-      </p>
+      <div class="modal-container__error">
+        <p class="modal-container__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+        <p class="modal-container__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+      </div>
       <button class="modal-container__button button" type="button">OK</button>
     </div>
     <div class="modal-container modal-container--sent">
-      <p class="modal-container__title">Ваш отзыв отправлен!</p>
-      <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
-        опубликуем
-        его на сайте.</p>
+      <div class="modal-container__sent">
+        <p class="modal-container__title">Ваш отзыв отправлен!</p>
+        <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время
+          мы опубликуем его на сайте.</p>
+      </div>
       <button class="modal-container__button button" type="button">ЗАКРЫТЬ ОКНО</button>
     </div>
   </div>
