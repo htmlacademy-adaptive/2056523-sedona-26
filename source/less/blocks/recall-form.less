@@ -1,115 +1,126 @@
-.recall-form__info {
-  width: 280px;
-  border: none;
-  padding: 24px 20px 34px;
-  margin: 0 auto;
-}
+.recall-form {
+  &__info {
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+  }
 
-.recall-form__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  padding: 0;
-}
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    padding: 0;
+  }
 
-.recall-form__question {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #333333;
-}
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
-.recall-form__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
+  &__block-1 {
+    padding: 24px 20px 39px;
+  }
 
-.recall-form__item {
-  margin-bottom: 16px;
-}
+  &__block-2 {
+    padding: 24px 20px 34px;
+  }
 
+  &__block-3 {
+    padding: 24px 20px;
+  }
 
-.recall-form__data-input {
-  border: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  background-color: #f2f2f2;
-  padding: 16px;
-  margin: 0;
-}
+  &__block-4 {
+    padding: 24px 20px;
+  }
 
-.recall-form__icon {
-  position: relative;
-}
+  &__block-5 {
+    padding: 24px 21px 56px 20px;
+  }
 
+  &__describe {
+    display: block;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    width: 247px;
+    height: 118px;
+    border: none;
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    resize: none;
+  }
 
-.recall-form__image {
-  position: absolute;
-  right: 0;
-  padding: 20px;
-  background-color: #e6e6e6;
-}
+  &__button {
+    position: relative;
+    border: none;
+    font-size: 21px;
+    width: 281px;
+    padding: 18.5px 34px 13.5px 32px;
+    background-color: #81b3d2;
+  }
 
-.recall-form__contact-input {
-  padding: 16px;
-  background-color: #f2f2f2;
-  border: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
+  &__required-field {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.6);
+    text-align: right;
+  }
 
-.recall-form__choice-of-impression {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-}
+  &__icon {
+    position: relative;
+  }
 
-.recall-form__sights {
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-}
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
 
-.recall-form__item-impression {
-  margin-bottom: 16px;
-}
+  &__data-input {
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #f2f2f2;
+    padding: 16px;
+    margin: 0
+  }
 
-.recall-form__describe {
-  font-size: 18px;
-  line-height: 26px;
-  border: none;
-  background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.3);
-  padding: 16px;
-  resize: none;
-}
+  &__image {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    background-color: #e6e6e6;
+  }
 
-.recall-form__button {
-  position: relative;
-  padding: 16px 33px;
-  border: none;
-  width: 281px;
-  background-color: #81b3d2;
-  color: #ffffff;
-}
+  &__contact-input {
+    padding: 16px;
+    background-color: #f2f2f2;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
 
+  &__choice-of-impression {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
 
-.recall-form__required-field {
-  margin: 0;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: rgba(51, 51, 51, 0.6);
+  &__sights {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
 }
 
 
