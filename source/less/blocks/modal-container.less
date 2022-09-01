@@ -1,63 +1,87 @@
 .modal-container {
-  width: 237px;
-  height: 200px;
-  background-color: #ffffff;
-  padding: 45px 42px 35px 41px;
-  text-align: center;
-}
+  &__wrapper-error {
+    width: 237px;
+    height: 200px;
+    background-color: #ffffff;
+    padding: 45px 42px 35px 41px;
+    text-align: center;
+  }
 
-.modal-container__error {
-  width: 237px;
-  height: 114px;
-  margin-bottom: 28px;
-}
+  &__text-error {
+    width: 237px;
+    height: 114px;
+    margin-bottom: 28px;
+  }
 
-.modal-container__title {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 37px;
-}
+  &__title-error {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 37px;
+  }
 
+  &__description-error {
+    font-weight: 400;
+    margin: 0;
+    color: #333333;
+  }
 
-.modal-container__description {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: center;
-  color: #333333;
-  margin: 0;
-  margin-bottom: 28px;
-}
+  &__button-error {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 18px 64px 14px 63px;
+    border: none;
+    background-color: #81b3d2;
+    width: 180px;
+  }
 
-.modal-container__button {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 18px 64px 14px 63px;
-  border: none;
-  background-color: #81b3d2;
+  &__wrapper-sent {
+    width: 320px;
+    height: 284px;
+    padding: 39px 0 0 0;
+  }
+
+  &__text-sent {
+    width: 244px;
+    height: 156px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__title-sent {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 38px;
+  }
+
+  &__description-sent {
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+  }
+
+  &__wrapper-button {
+    width: 280px;
+    height: 58px;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  &__button-sent {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 18px 62px 14px 60px;
+    border: none;
+    background-color: #81b3d2;
+    width: 280px;
+  }
 }
 
 
 @media (min-width: @tablet-width) {
   .modal-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
     width: 307px;
     height: 248px;
     padding: 50px 47px 49px 46px;
@@ -69,6 +93,14 @@
   }
 
   .modal-container__title {
-    margin-bottom: 37px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-container__button-error {
+    width: 272px;
+    padding: 18.5px 108px 13.5px 107px;
+    border: none;
+    background-color: #81b3d2;
   }
 }
