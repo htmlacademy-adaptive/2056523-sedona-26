@@ -50,7 +50,7 @@
       <form class="recall-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="recall-form__info recall-form__block-1">
           <legend class="recall-form__title">Представьтесь:</legend>
-          <ul class="recall-form__list">
+          <ul class="recall-form__list recall-form__list-date">
             <li class="recall-form__item">
               <label class="recall-form__question" for="name">ИМЯ*:</label>
               <input class="recall-form__contact-input" type="text" id="name" name="name" placeholder="Пётр" required>
@@ -67,7 +67,7 @@
         </fieldset>
         <fieldset class="recall-form__info recall-form__block-2">
           <legend class="recall-form__title">Контактная информация:</legend>
-          <ul class="recall-form__list">
+          <ul class="recall-form__list recall-form__list-contacts">
             <li class="recall-form__item">
               <label class="recall-form__question" for="phone-number">Контактный телефон*:</label>
               <input class="recall-form__data-contacts" type="tel" id="phone-number" name="phone-number"
@@ -98,7 +98,7 @@
         </fieldset>
         <fieldset class="recall-form__info recall-form__block-3">
           <legend class="recall-form__title">ВАше Общее впечатление:</legend>
-          <ul class="recall-form__list">
+          <ul class="recall-form__list recall-form__list-impression">
             <li class="recall-form__item">
               <label class="recall-form__choice-of-impression" for="positive">
                 <input class="recall-form__data-input" type="radio" id="positive" name="your-impression" checked>
@@ -123,7 +123,7 @@
           </ul>
         </fieldset>
         <fieldset class="recall-form__info recall-form__block-4">
-          <legend class="recall-form__title">посещенные достопримечательности:</legend>
+          <legend class="recall-form__title">посещенные <br> достопримечательности:</legend>
           <ul class="recall-form__list recall-form__list-sights">
             <li class="recall-form__item">
               <label class="recall-form__sights">
@@ -148,7 +148,7 @@
             </li>
             <li class="recall-form__item">
               <label class="recall-form__sights">
-                <input class="recall-form__data-input" type="checkbox" name="red-rocks" checked>
+                <input class="recall-form__data-input" type="checkbox" name="red-rocks">
                 Красные скалы
                 <span class="recall-form__square"></span>
               </label>
