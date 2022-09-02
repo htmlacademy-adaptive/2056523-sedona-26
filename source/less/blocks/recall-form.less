@@ -82,7 +82,7 @@
     list-style-type: none;
   }
 
-  &__data-input {
+  &__data-contacts {
     border: none;
     font-weight: 700;
     font-size: 18px;
@@ -90,6 +90,29 @@
     background-color: #f2f2f2;
     padding: 16px;
     margin: 0;
+  }
+
+  &__data-input {
+    appearance: none;
+    position: absolute;
+    border: none;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+
+  &__radio {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+
+  &__square {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background-color: #f2f2f2;
   }
 
   &__image {
@@ -109,17 +132,25 @@
   }
 
   &__choice-of-impression {
+    display: flex;
+    align-items: center;
+    height: 46px;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     text-transform: none;
+    padding-left: 62px;
   }
 
   &__sights {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     line-height: 26px;
     text-transform: none;
+    height: 46px;
+    padding-left: 62px;
   }
 }
 
