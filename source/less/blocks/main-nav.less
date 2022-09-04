@@ -1,14 +1,71 @@
 .main-nav {
   position: relative;
+
+  &__toggle {
+    position: absolute;
+    display: block;
+    top: 17px;
+    right: 22.9px;
+    width: 22.9px;
+    height: 22px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+
+  &--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22.9px;
+    height: 4px;
+    background-color: #81b3d2;
+    box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+  }
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  background: url("../img/cross.png") center no-repeat;
-  width: 32px;
-  height: 32px;
-  padding: 0;
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  right: 22.9px;
+  background-color: #81b3d2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -2px;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -2px;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    &__toggle {
+      display: none;
+    }
+  }
 }
