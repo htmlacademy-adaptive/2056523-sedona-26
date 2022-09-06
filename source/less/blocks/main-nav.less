@@ -79,8 +79,19 @@
   }
 }
 
+.main-nav__logo {
+  position: absolute;
+  width: 185px;
+  height: 96px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+
 @media (max-width: @mobile-width-only) {
-  .main-nav--opened .main-header__logo {
+  .main-nav--opened .main-nav__logo {
     display: none;
   }
 }
@@ -91,7 +102,7 @@
     display: none;
   }
 
-  .main-nav--opened.main-nav__wrapper::before {
-    background: none;
+  .main-nav--opened .main-nav__wrapper::before {
+    display: none;
   }
 }
