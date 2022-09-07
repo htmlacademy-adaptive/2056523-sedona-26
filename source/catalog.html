@@ -11,15 +11,17 @@
 <body class="page__body">
   <div class="page__container">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
+        </a>
+        <button class="main-nav__toggle button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav-list">
             <li class="main-nav-list__item">
-              <a class="main-nav-list__link" href="index.html">Главная</a>
+              <a class="main-nav-list__link main-nav-list__link--brown" href="index.html">Главная</a>
             </li>
             <li class="main-nav-list__item">
               <a class="main-nav-list__link" href="catalog.html">Фото и видео</a>
@@ -181,19 +183,6 @@
         </a>
       </div>
     </footer>
-    <div class="modal-container modal-container--error">
-      <p class="modal-container__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-      <p class="modal-container__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-      </p>
-      <button class="modal-container__button button" type="button">OK</button>
-    </div>
-    <div class="modal-container modal-container--sent">
-      <p class="modal-container__title">Ваш отзыв отправлен!</p>
-      <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
-        опубликуем
-        его на сайте.</p>
-      <button class="modal-container__button button" type="button">ЗАКРЫТЬ ОКНО</button>
-    </div>
   </div>
 </body>
 

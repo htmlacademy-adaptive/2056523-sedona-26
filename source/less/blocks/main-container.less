@@ -8,7 +8,6 @@
 
 .main-container__image-form {
   position: relative;
-  top: 1px;
   width: 320px;
   height: 214px;
   background-image: url("../img/background/sedona-mountains-form.jpg");
@@ -58,7 +57,7 @@
 
 .main-container__triangle {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 320px;
   height: 57px;
   background-image: url("../img/advantages-mobile/intro-triangle.svg");
@@ -67,6 +66,10 @@
 
 
 @media (min-width: @tablet-width) {
+  .main-container {
+    margin-bottom: 48px;
+  }
+
   .main-container__image {
     width: 768px;
     height: 518px;
