@@ -61,7 +61,14 @@
                 <p class="wrapper-advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
             </div>
-            <div class="advantages__image-real-town"></div>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/advantages-desktop/town-of-sedona-desktop.jpg 1x, img/advantages-desktop/town-of-sedona-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/advantages-tablet/town-of-sedona-tablet.jpg 1x, img/advantages-tablet/town-of-sedona-tablet@2x.jpg 2x">
+              <img class="advantages__image-real-town" src="img/advantages-mobile/town-of-sedona.jpg" width="320"
+                height="260" srcset="img/advantages-mobile/town-of-sedona@2x.jpg 2x" alt="Городок Седона.">
+            </picture>
             <ul class="advantages__enclosed-list">
               <li class="advantages__enclosed-item advantages__enclosed-item-housing">
                 <div class="advantages__enclosed-item-wrapper-housing">
@@ -84,7 +91,14 @@
             </ul>
           </li>
           <li class="advantages__item">
-            <div class="advantages__image-devil-bridge"></div>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/advantages-desktop/bridge-devil-desktop.jpg 1x, img/advantages-desktop/bridge-devil-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/advantages-tablet/bridge-devil-tablet.jpg 1x, img/advantages-tablet/bridge-devil-tablet@2x.jpg 2x">
+              <img class="advantages__image-devil-bridge" src="img/advantages-mobile/bridge-devil.jpg" width="320"
+                height="260" srcset="img/advantages-mobile/bridge-devil@2x.jpg 2x" alt="Мост дьявола.">
+            </picture>
             <div class="wrapper-advantages wrapper-advantages--color-sky-blue">
               <h3 class="wrapper-advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
               <p class="wrapper-advantages__number">— №2 —</p>
