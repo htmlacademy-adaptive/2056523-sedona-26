@@ -52,7 +52,15 @@
         <h2 class="visually-hidden">Каталог фотографий</h2>
         <ul class="photos-list">
           <li class="photos-list__item photos-list__first photos-list__item--color-gray">
-            <div class="photos-list__image-expanses"></div>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/non-native-expanses-desktop.jpg 1x, img/catalog-desktop/non-native-expanses-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/non-native-expanses-tablet.jpg 1x, img/catalog-tablet/non-native-expanses-tablet@2x.jpg 2x">
+              <img class="photos-list__image-expanses" src="img/catalog-mobile/non-native-expanses-mobile.jpg"
+                width="280" height="280" srcset="img/catalog-mobile/non-native-expanses-mobile@2x.jpg 2x"
+                alt="Неродные просторы.">
+            </picture>
             <div class="photos-list__wrapper">
               <div class="photos-list__block-author">
                 <p class="photos-list__title">Неродные просторы</p>
@@ -71,7 +79,15 @@
             </div>
           </li>
           <li class="photos-list__item photos-list__item--color-gray">
-            <div class="photos-list__image-vegetation"></div>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/local-vegetation-desktop.jpg 1x, img/catalog-desktop/local-vegetation-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/local-vegetation-tablet.jpg 1x, img/catalog-tablet/local-vegetation-tablet@2x.png">
+              <img class="photos-list__image-vegetation" src="img/catalog-mobile/local-vegetation-mobile.jpg"
+                width="280" height="280" srcset="img/catalog-mobile/local-vegetation-mobile@2x.jpg 2x"
+                alt="Местная растительность.">
+            </picture>
             <div class="photos-list__wrapper">
               <div class="photos-list__block-author">
                 <p class="photos-list__title">Местная растительность</p>
@@ -90,7 +106,14 @@
             </div>
           </li>
           <li class="photos-list__item photos-list__item--color-gray">
-            <div class="photos-list__image-north"></div>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/road-to-the-north-desktop.jpg 1x, img/catalog-desktop/road-to-the-north-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/road-to-the-north-tablet.jpg 1x, img/catalog-tablet/road-to-the-north-tablet@2x.png 2x">
+              <img class="photos-list__image-north" src="img/catalog-mobile/road-to-the-north-mobile.jpg"
+                srcset="img/catalog-mobile/road-to-the-north-mobile@2x.jpg 2x" alt="Дорога на север.">
+            </picture>
             <div class="photos-list__wrapper">
               <div class="photos-list__block-author">
                 <p class="photos-list__title">Дорога на север</p>
@@ -109,7 +132,14 @@
             </div>
           </li>
           <li class="photos-list__item photos-list__item--color-gray">
-            <div class="photos-list__image-devil"></div>
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/bridge-of-a-devil-desktop.jpg 1x, img/catalog-desktop/bridge-of-a-devil-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/bridge-of-a-devil-tablet.jpg 1x, img/catalog-tablet/bridge-of-a-devil-tablet@2x.jpg 2x">
+              <img class="photos-list__image-devil" src="img/catalog-mobile/bridge-of-a-devil-mobile.jpg"
+                srcset="img/catalog-mobile/bridge-of-a-devil-mobile@2x.png 2x" alt="Мост дьявола.">
+            </picture>
             <div class="photos-list__wrapper">
               <div class="photos-list__block-author">
                 <p class="photos-list__title">Мост дьявола</p>

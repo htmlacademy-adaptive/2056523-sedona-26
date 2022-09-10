@@ -8,36 +8,24 @@
   margin: 25px 0;
 }
 
-.photos-list__image {
+.photos-list__image-expanses {
   margin-bottom: 15px;
+  display: block;
+}
 
-  &-expanses {
-    width: 280px;
-    height: 280px;
-    background-image: url("../img/catalog-mobile/non-native-expanses-mobile.jpg");
-    background-repeat: no-repeat;
-  }
+.photos-list__image-vegetation {
+  display: block;
+  margin-bottom: 15px;
+}
 
-  &-vegetation {
-    width: 280px;
-    height: 280px;
-    background-image: url("../img/catalog-mobile/local-vegetation-mobile.jpg");
-    background-repeat: no-repeat;
-  }
+.photos-list__image-north {
+  display: block;
+  margin-bottom: 15px;
+}
 
-  &-north {
-    width: 280px;
-    height: 280px;
-    background-image: url("../img/catalog-mobile/road-to-the-north-mobile.jpg");
-    background-repeat: no-repeat;
-  }
-
-  &-devil {
-    width: 280px;
-    height: 280px;
-    background-image: url("../img/catalog-mobile/bridge-of-a-devil-mobile.jpg");
-    background-repeat: no-repeat;
-  }
+.photos-list__image-devil {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .photos-list__title {
@@ -97,41 +85,35 @@
     }
   }
 
-  .photos-list__first {
-    width: 100%;
-  }
 
-  .photos-list__image {
+  .photos-list__image-expanses {
+    display: block;
+    width: 648px;
+    height: 400px;
     margin-bottom: 0;
-
-    &-expanses {
-      width: 648px;
-      height: 400px;
-      background-image: url("../img/catalog-tablet/non-native-expanses-tablet.jpg");
-      background-repeat: no-repeat;
-    }
-
-    &-vegetation {
-      width: 324px;
-      height: 267px;
-      background-image: url("../img/catalog-tablet/local-vegetation-tablet.jpg");
-      background-repeat: no-repeat;
-    }
-
-    &-north {
-      width: 324px;
-      height: 267px;
-      background-image: url("../img/catalog-tablet/road-to-the-north-tablet.jpg");
-      background-repeat: no-repeat;
-    }
-
-    &-devil {
-      width: 324px;
-      height: 267px;
-      background-image: url("../img/catalog-tablet/bridge-of-a-devil-tablet.jpg");
-      background-repeat: no-repeat;
-    }
   }
+
+  .photos-list__image-vegetation {
+    display: block;
+    margin-bottom: 0;
+    width: 324px;
+    height: 267px;
+  }
+
+  .photos-list__image-north {
+    display: block;
+    margin-bottom: 0;
+    width: 324px;
+    height: 267px;
+  }
+
+  .photos-list__image-devil {
+    display: block;
+    margin-bottom: 0;
+    width: 324px;
+    height: 267px;
+  }
+
 
   .photos-list__wrapper {
     position: relative;
@@ -162,33 +144,27 @@
 
 
 @media (min-width: @desktop-width) {
-  .photos-list__image {
-    &-expanses {
-      width: 1200px;
-      height: 400px;
-      background-image: url("../img/catalog-desktop/non-native-expanses-desktop.jpg");
-      background-repeat: no-repeat;
-    }
+  .photos-list__image-expanses {
+    display: block;
+    width: 1200px;
+    height: 400px;
+  }
 
-    &-vegetation {
-      width: 400px;
-      height: 267px;
-      background-image: url("../img/catalog-desktop/local-vegetation-desktop.jpg");
-      background-repeat: no-repeat;
-    }
+  .photos-list__image-vegetation {
+    display: block;
+    width: 400px;
+    height: 267px;
+  }
 
-    &-north {
-      width: 400px;
-      height: 267px;
-      background-image: url("../img/catalog-desktop/road-to-the-north-desktop.jpg");
-      background-repeat: no-repeat;
-    }
+  .photos-list__image-north {
+    display: block;
+    width: 400px;
+    height: 267px;
+  }
 
-    &-devil {
-      width: 400px;
-      height: 267px;
-      background-image: url("../img/catalog-desktop/bridge-of-a-devil-desktop.jpg");
-      background-repeat: no-repeat;
-    }
+  .photos-list__image-devil {
+    display: block;
+    width: 400px;
+    height: 267px;
   }
 }
