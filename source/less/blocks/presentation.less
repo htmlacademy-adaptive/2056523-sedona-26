@@ -1,5 +1,16 @@
 .presentation {
+  position: relative;
   padding-top: 32px;
+}
+
+.presentation::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 37px;
+  background-image: url("../img/triangl-five-reasons.svg");
+  background-color: #81b3d2;
+  bottom: -53px;
 }
 
 .presentation__wrapper-form {
@@ -8,7 +19,7 @@
 }
 
 .presentation__wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 53px;
 }
 
 
@@ -30,13 +41,6 @@
   margin: 0;
 }
 
-.presentation__container-triangle {
-  width: 320px;
-  height: 37px;
-  background-image: url("../img/triangl-five-reasons.svg");
-  background-repeat: no-repeat;
-  background-color: #81b3d2;
-}
 
 .presentation__title-form {
   font-size: 18px;
@@ -82,7 +86,7 @@
     line-height: 24px;
   }
 
-  .presentation__container-triangle {
+  .presentation::after {
     display: none;
   }
 }
