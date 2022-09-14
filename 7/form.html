@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2056523-sedona-26/7/">
+</head>
+
+<body class="page__body">
+  <svg class="page__sprite">
+    <symbol id="vk" viewBox="0 0 24 24">
+      <path
+        d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+        fill="#ffffff" />
+    </symbol>
+    <symbol id="telegram" viewBox="0 0 24 24">
+      <path
+        d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"
+        fill="#ffffff" />
+    </symbol>
+    <symbol id="youtube" viewBox="0 0 24 24">
+      <path
+        d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
+        fill="#ffffff" />
+    </symbol>
+  </svg>
+  <div class="page__container">
+    <header class="main-header">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
+        </a>
+        <button class="main-nav__toggle button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav-list">
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link main-nav-list__link--brown" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="https://htmlacademy.ru/">HTML academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="main-container__image-form">
+        <div class="main-container__welcome-form"></div>
+        <div class="main-container__triangle"></div>
+      </div>
+      <div class="presentation">
+        <div class="presentation__wrapper-form">
+          <h1 class="presentation__title-form">Оставьте свой отзыв</h1>
+          <p class="presentation__text-form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных
+            вами достопримечательностях</p>
+        </div>
+      </div>
+      <form class="recall-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="recall-form__info recall-form__block-1">
+          <legend class="recall-form__title">Представьтесь:</legend>
+          <ul class="recall-form__list recall-form__list-date">
+            <li class="recall-form__item">
+              <label class="recall-form__question" for="name">ИМЯ*:</label>
+              <input class="recall-form__contact-input" type="text" id="name" name="name" placeholder="Пётр" required>
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__question" for="surname">ФАМИЛИЯ*:</label>
+              <input class="recall-form__contact-input" type="text" id="surname" placeholder="Пустота" required>
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__question" for="middle-name">Отчество:</label>
+              <input class="recall-form__contact-input" type="text" id="middle-name" placeholder="Викторович">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="recall-form__info recall-form__block-2">
+          <legend class="recall-form__title">Контактная информация:</legend>
+          <ul class="recall-form__list recall-form__list-contacts">
+            <li class="recall-form__item">
+              <label class="recall-form__question" for="phone-number">Контактный телефон*:</label>
+              <input class="recall-form__data-contacts" type="tel" id="phone-number" name="phone-number"
+                placeholder="Введите телефон" required>
+              <span class="recall-form__icon">
+                <svg class="recall-form__image" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
+                    fill="#010101" />
+                </svg>
+              </span>
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__question" for="email">Электронная почта*:</label>
+              <input class="recall-form__data-contacts" type="email" id="email" name="email"
+                placeholder="Введите e-mail" required>
+              <span class="recall-form__icon">
+                <svg class="recall-form__image" width="18" height="18" viewBox="0 0 16 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
+                    fill="black" />
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="recall-form__info recall-form__block-3">
+          <legend class="recall-form__title">ВАше Общее впечатление:</legend>
+          <ul class="recall-form__list recall-form__list-impression">
+            <li class="recall-form__item">
+              <label class="recall-form__choice-of-impression" for="positive">
+                <input class="recall-form__data-input" type="radio" id="positive" name="your-impression" checked>
+                Скорее положительное
+                <span class="recall-form__radio"></span>
+              </label>
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__choice-of-impression" for="negative">
+                <input class="recall-form__data-input" type="radio" id="negative" name="your-impression">
+                Скорее отрицательное
+                <span class="recall-form__radio"></span>
+              </label>
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__choice-of-impression" for="no-answer">
+                <input class="recall-form__data-input" type="radio" id="no-answer" name="your-impression">
+                Затрудняюсь ответить
+                <span class="recall-form__radio"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="recall-form__info recall-form__block-4">
+          <legend class="recall-form__title">посещенные <br> достопримечательности:</legend>
+          <ul class="recall-form__list recall-form__list-sights">
+            <li class="recall-form__item">
+              <label class="recall-form__sights">
+                <input class="recall-form__data-input" type="checkbox" name="devil's-bridge" checked>
+                Мост Дьявола
+                <span class="recall-form__square"></span>
+              </label>
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__sights">
+                <input class="recall-form__data-input" type="checkbox" name="gore-bell" checked>
+                Гора-Колокол
+                <span class="recall-form__square"></span>
+              </label>
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__sights">
+                <input class="recall-form__data-input" type="checkbox" name="slide-park" checked>
+                Слайд-парк
+                <span class="recall-form__square"></span>
+              </label>
+            </li>
+            <li class="recall-form__item">
+              <label class="recall-form__sights">
+                <input class="recall-form__data-input" type="checkbox" name="red-rocks">
+                Красные скалы
+                <span class="recall-form__square"></span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="recall-form__info recall-form__block-5">
+          <legend class="recall-form__title">Опишите свои эмоции:</legend>
+          <textarea class="recall-form__describe" name="describe-your-emotions" cols="25"
+            rows="5">Опишите подробно все свои восторги</textarea>
+          <div class="recall-form__info-wrapper">
+            <button class="recall-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <p class="recall-form__required-field">* — обязательные поля</p>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-social">
+        <a class="hash-tag" href="#">#visitSEDONA
+          <span class="visually-hidden">Хэш тег Седона</span>
+        </a>
+        <ul class="social-networks">
+          <li class="social-networks__item">
+            <a class="social-networks__link social-networks__link--vk" href="https://vk.com/htmlacademy">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use href="#vk"></use>
+              </svg>
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a class="social-networks__link social-networks__link--telegram" href="https://t.me/htmlacademy">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use href="#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a class="social-networks__link social-networks__link--youtube"
+              href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use href="#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="link-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg class="link-htmlacademy-icon" width="24" height="29" viewBox="0 0 24 29"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.1338 0H12.0446L0 1.19062V22.1965L12.0446 29L24 22.1965V1.19062L12.1338 0ZM22.3048 10.2903L12.0446 4.50733V4.42229H11.9554L11.8662 4.33724V4.42229L1.69517 10.2903V2.63636L11.9554 1.61584L22.3048 2.63636V10.2903ZM11.9554 5.78299L22.2156 11.4809L18.2007 13.6921L11.8662 10.1202V11.3109L17.1301 14.2874L16.3271 14.7126L11.8662 12.1613V13.3519L15.2565 15.3079L14.5428 15.7331L11.8662 14.2023V15.393L13.5613 16.3284L11.9554 17.2639L1.78439 11.566L11.9554 5.78299ZM1.69517 12.8416L11.8662 18.6246V19.4751L4.81784 15.478V16.6686L11.9554 20.7507V21.6862L4.81784 17.6891V18.8798L11.9554 22.9619L19.1822 18.7947V14.3724L22.2156 12.6716V21.176L11.9554 27.044L1.69517 21.261V12.8416Z" />
+          </svg>
+          <span class="visually-hidden">HTML Академия</span>
+        </a>
+      </div>
+    </footer>
+    <div class="modal-container modal-container--error">
+      <div class="modal-container__text-error">
+        <p class="modal-container__title-error">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+        <p class="modal-container__description-error">Проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить
+        </p>
+      </div>
+      <button class="modal-container__button-error button" type="button">OK</button>
+    </div>
+    <div class="modal-container modal-container--sent">
+      <div class="modal-container__text-sent">
+        <p class="modal-container__title-sent">Ваш отзыв отправлен!</p>
+        <p class="modal-container__description-sent">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее
+          время
+          мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal-container__wrapper-button">
+        <button class="modal-container__button-sent button" type="button">ЗАКРЫТЬ ОКНО</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

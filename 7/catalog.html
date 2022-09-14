@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2056523-sedona-26/7/">
+</head>
+
+<body class="page__body">
+  <svg class="page__sprite">
+    <symbol id="vk" viewBox="0 0 24 24">
+      <path
+        d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+        fill="#ffffff" />
+    </symbol>
+    <symbol id="telegram" viewBox="0 0 24 24">
+      <path
+        d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"
+        fill="#ffffff" />
+    </symbol>
+    <symbol id="youtube" viewBox="0 0 24 24">
+      <path
+        d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
+        fill="#ffffff" />
+    </symbol>
+  </svg>
+  <div class="page__container">
+    <header class="main-header">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона.">
+        </a>
+        <button class="main-nav__toggle button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav-list">
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link main-nav-list__link--brown" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav-list__item">
+              <a class="main-nav-list__link" href="https://htmlacademy.ru/">HTML academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="main-container__image-form">
+        <div class="main-container__welcome-form"></div>
+        <div class="main-container__triangle"></div>
+      </div>
+      <div class="presentation">
+        <h1 class="presentation__title">Фото и видео</h1>
+        <p class="presentation__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          забыть о политике и экономике.</p>
+      </div>
+      <section class="photos">
+        <h2 class="visually-hidden">Каталог фотографий</h2>
+        <ul class="photos-list">
+          <li class="photos-list__item photos-list__first photos-list__item--color-gray">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/non-native-expanses-desktop.webp 1x, img/catalog-desktop/non-native-expanses-desktop-2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-tablet/non-native-expanses-tablet.webp 1x, img/catalog-tablet/non-native-expanses-tablet-2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-mobile/non-native-expanses-mobile.webp 1x, img/catalog-mobile/non-native-expanses-mobile-2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/non-native-expanses-desktop.jpg 1x, img/catalog-desktop/non-native-expanses-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/non-native-expanses-tablet.jpg 1x, img/catalog-tablet/non-native-expanses-tablet@2x.jpg 2x">
+              <img class="photos-list__image-expanses" src="img/catalog-mobile/non-native-expanses-mobile.jpg"
+                width="280" height="280" srcset="img/catalog-mobile/non-native-expanses-mobile@2x.jpg 2x"
+                alt="Неродные просторы.">
+            </picture>
+            <div class="photos-list__wrapper">
+              <div class="photos-list__block-author">
+                <p class="photos-list__title">Неродные просторы</p>
+                <p class="photos-list__author">Автор фото: Борис</p>
+              </div>
+              <div class="photos-list__block-liked">
+                <button class="photos-list__reactions button" type="button">
+                  <svg class="photos-list__reactions-icon" width="22" height="20" viewBox="0 0 22 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.4 3.6L11.8 6.5L11.2 9H13.7H19.9V11C19.9 11 19.9 11 19.9 11.1L17 18H8V8L12.4 3.6ZM2 10V18V10ZM13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0ZM4 8H0V20H4V8Z" />
+                  </svg>
+                </button>
+                <span class="photos-list__reactions-count">1350</span>
+              </div>
+            </div>
+          </li>
+          <li class="photos-list__item photos-list__item--color-gray">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/local-vegetation-desktop.webp 1x, img/catalog-desktop/local-vegetation-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-widtn: 768px)"
+                srcset="img/catalog-tablet/local-vegetation-tablet.webp 1x, img/catalog-tablet/local-vegetation-tablet-2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-mobile/local-vegetation-mobile.webp 1x, img/catalog-mobile/local-vegetation-mobile@2x.jpg 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/local-vegetation-desktop.jpg 1x, img/catalog-desktop/local-vegetation-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/local-vegetation-tablet.jpg 1x, img/catalog-tablet/local-vegetation-tablet@2x.png 2x">
+              <img class="photos-list__image-vegetation" src="img/catalog-mobile/local-vegetation-mobile.jpg"
+                width="280" height="280" srcset="img/catalog-mobile/local-vegetation-mobile@2x.jpg 2x"
+                alt="Местная растительность.">
+            </picture>
+            <div class="photos-list__wrapper">
+              <div class="photos-list__block-author">
+                <p class="photos-list__title">Местная растительность</p>
+                <p class="photos-list__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photos-list__block-liked">
+                <button class="photos-list__reactions button" type="button">
+                  <svg class="photos-list__reactions-icon" width="22" height="20" viewBox="0 0 22 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.4 3.6L11.8 6.5L11.2 9H13.7H19.9V11C19.9 11 19.9 11 19.9 11.1L17 18H8V8L12.4 3.6ZM2 10V18V10ZM13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0ZM4 8H0V20H4V8Z" />
+                  </svg>
+                </button>
+                <span class="photos-list__reactions-count">143</span>
+              </div>
+            </div>
+          </li>
+          <li class="photos-list__item photos-list__item--color-gray">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/road-to-the-north-desktop.webp 1x, img/catalog-desktop/road-to-the-north-desktop-2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-tablet/road-to-the-north-tablet.webp 1x, img/catalog-tablet/road-to-the-north-tablet-2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-mobile/road-to-the-north-mobile.webp 1x, img/catalog-mobile/road-to-the-north-mobile-2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/road-to-the-north-desktop.jpg 1x, img/catalog-desktop/road-to-the-north-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/road-to-the-north-tablet.jpg 1x, img/catalog-tablet/road-to-the-north-tablet@2x.png 2x">
+              <img class="photos-list__image-north" src="img/catalog-mobile/road-to-the-north-mobile.jpg"
+                srcset="img/catalog-mobile/road-to-the-north-mobile@2x.jpg 2x" alt="Дорога на север.">
+            </picture>
+            <div class="photos-list__wrapper">
+              <div class="photos-list__block-author">
+                <p class="photos-list__title">Дорога на север</p>
+                <p class="photos-list__author">Автор фото: Петр</p>
+              </div>
+              <div class="photos-list__block-liked">
+                <button class="photos-list__reactions button" type="button">
+                  <svg class="photos-list__reactions-icon" width="22" height="20" viewBox="0 0 22 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.4 3.6L11.8 6.5L11.2 9H13.7H19.9V11C19.9 11 19.9 11 19.9 11.1L17 18H8V8L12.4 3.6ZM2 10V18V10ZM13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0ZM4 8H0V20H4V8Z" />
+                  </svg>
+                </button>
+                <span class="photos-list__reactions-count">96</span>
+              </div>
+            </div>
+          </li>
+          <li class="photos-list__item photos-list__item--color-gray">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/bridge-of-a-devil-desktop.webp 1x, img/catalog-desktop/bridge-of-a-devil-desktop-2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-tablet/bridge-of-a-devil-tablet.webp 1x, img/catalog-tablet/bridge-of-a-devil-tablet-2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-mobile/bridge-of-a-devil-mobile.webp 1x, img/catalog-mobile/bridge-of-a-devil-mobile-2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog-desktop/bridge-of-a-devil-desktop.jpg 1x, img/catalog-desktop/bridge-of-a-devil-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-tablet/bridge-of-a-devil-tablet.jpg 1x, img/catalog-tablet/bridge-of-a-devil-tablet@2x.jpg 2x">
+              <img class="photos-list__image-devil" src="img/catalog-mobile/bridge-of-a-devil-mobile.jpg"
+                srcset="img/catalog-mobile/bridge-of-a-devil-mobile@2x.png 2x" alt="Мост дьявола.">
+            </picture>
+            <div class="photos-list__wrapper">
+              <div class="photos-list__block-author">
+                <p class="photos-list__title">Мост дьявола</p>
+                <p class="photos-list__author">Автор фото: Антон</p>
+              </div>
+              <div class="photos-list__block-liked">
+                <button class="photos-list__reactions button" type="button">
+                  <svg class="photos-list__reactions-icon" width="22" height="20" viewBox="0 0 22 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.4 3.6L11.8 6.5L11.2 9H13.7H19.9V11C19.9 11 19.9 11 19.9 11.1L17 18H8V8L12.4 3.6ZM2 10V18V10ZM13.2 0L6.6 6.6C6.2 6.9 6 7.4 6 8V18C6 19.1 6.9 20 8 20H17C17.8 20 18.5 19.5 18.8 18.8L21.8 11.7C21.9 11.5 21.9 11.2 21.9 11V9H22C22 7.9 21.1 7 20 7H13.7L14.7 2.4V2.1C14.7 1.7 14.5 1.3 14.3 1L13.2 0ZM4 8H0V20H4V8Z" />
+                  </svg>
+                </button>
+                <span class="photos-list__reactions-count">254</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="videos">
+        <h2 class="visually-hidden">Каталог видео</h2>
+        <div class="videos__wrapper">
+          <p class="videos__title">Все еще сомневаетесь?</p>
+          <p class="videos__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
+        </div>
+        <div class="videos__image">
+          <span class="videos__polygon"></span>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-social">
+        <a class="hash-tag" href="#">#visitSEDONA
+          <span class="visually-hidden">Хэш тег Седона</span>
+        </a>
+        <ul class="social-networks">
+          <li class="social-networks__item">
+            <a class="social-networks__link social-networks__link--vk" href="https://vk.com/htmlacademy">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use href="#vk"></use>
+              </svg>
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a class="social-networks__link social-networks__link--telegram" href="https://t.me/htmlacademy">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use href="#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a class="social-networks__link social-networks__link--youtube"
+              href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use href="#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="link-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg class="link-htmlacademy-icon" width="24" height="29" viewBox="0 0 24 29" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.1338 0H12.0446L0 1.19062V22.1965L12.0446 29L24 22.1965V1.19062L12.1338 0ZM22.3048 10.2903L12.0446 4.50733V4.42229H11.9554L11.8662 4.33724V4.42229L1.69517 10.2903V2.63636L11.9554 1.61584L22.3048 2.63636V10.2903ZM11.9554 5.78299L22.2156 11.4809L18.2007 13.6921L11.8662 10.1202V11.3109L17.1301 14.2874L16.3271 14.7126L11.8662 12.1613V13.3519L15.2565 15.3079L14.5428 15.7331L11.8662 14.2023V15.393L13.5613 16.3284L11.9554 17.2639L1.78439 11.566L11.9554 5.78299ZM1.69517 12.8416L11.8662 18.6246V19.4751L4.81784 15.478V16.6686L11.9554 20.7507V21.6862L4.81784 17.6891V18.8798L11.9554 22.9619L19.1822 18.7947V14.3724L22.2156 12.6716V21.176L11.9554 27.044L1.69517 21.261V12.8416Z"
+              fill="#81B3D2" />
+          </svg>
+          <span class="visually-hidden">HTML Академия</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
