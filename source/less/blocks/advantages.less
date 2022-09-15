@@ -1,3 +1,18 @@
+
+.advantages {
+  position: relative;
+}
+
+.advantages::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 37px;
+  top: -37px;
+  background-image: url("../img/triangl-five-reasons.svg");
+  background-color: #81b3d2;
+}
+
 .advantages__list {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -102,6 +117,10 @@
 
 
 @media (min-width: @tablet-width) {
+  .advantages::before {
+    display: none;
+  }
+
   .advantages__item {
     display: flex;
     flex-wrap: wrap;
