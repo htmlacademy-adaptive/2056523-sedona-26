@@ -1,3 +1,17 @@
+.advantages {
+  position: relative;
+}
+
+.advantages::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 37px;
+  top: -37px;
+  background-image: url("../img/triangl-five-reasons.svg");
+  background-color: #81b3d2;
+}
+
 .advantages__list {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -87,6 +101,7 @@
 }
 
 .advantages__enclosed-text-area {
+  position: relative;
   width: 268px;
   margin: 0 auto;
 }
@@ -96,12 +111,40 @@
   margin: 0 auto;
 }
 
+.advantages__enclosed-text-road::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 284px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 171px;
+  background-color: #d6d6d6;
+}
+
+.advantages__enclosed-text-road::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 284px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 327px;
+  background-color: #d6d6d6;
+}
+
 .advantages__enclosed-text-tourists {
   width: 284px;
 }
 
 
 @media (min-width: @tablet-width) {
+  .advantages::before {
+    display: none;
+  }
+
   .advantages__item {
     display: flex;
     flex-wrap: wrap;
