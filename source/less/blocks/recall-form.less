@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+.recall-form {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 24px;
+}
+
+.recall-form__info:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 24px;
+}
+
 .recall-form__title {
   font-size: 18px;
   line-height: 26px;
@@ -208,16 +218,31 @@
     flex-direction: row;
     justify-content: center;
     padding: 0 60px;
+    border-top: none;
   }
 
   .recall-form__info {
+    position: relative;
     padding: 0;
     margin: 0;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
   }
 
   .recall-form__block-1 {
     width: 324px;
     margin-bottom: 48px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 338px;
+      border-right: 1px solid #dbdbdb;
+      top: -54px;
+      right: 0;
+    }
   }
 
   .recall-form__block-2 {
@@ -281,12 +306,12 @@
   }
 
   .recall-form__item:nth-child(3) {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 
   .recall-form__image {
     bottom: 0;
-    left: 219px;
+    left: 218px;
   }
 
   .recall-form__question {
@@ -304,6 +329,12 @@
 
   .recall-form__list-impression:first-child {
     margin-right: 16px;
+  }
+
+  .recall-form__list-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
