@@ -2,16 +2,16 @@
   border: none;
   margin: 0 auto;
   padding: 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 24px;
+  }
 }
 
 .recall-form {
   border-top: 1px solid #e5e5e5;
   padding-top: 24px;
-}
-
-.recall-form__info:not(:last-child) {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 24px;
 }
 
 .recall-form__title {
@@ -228,12 +228,12 @@
 
     &:not(:last-child) {
       border-bottom: none;
+      margin-bottom: 48px;
     }
   }
 
   .recall-form__block-1 {
     width: 324px;
-    margin-bottom: 48px;
 
     &::after {
       position: absolute;
@@ -255,17 +255,77 @@
     height: 162px;
     margin-bottom: 48px;
     padding: 0 36px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      right: 0;
+      top: -40px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      left: 0;
+      top: -40px;
+      background-color: #dbdbdb;
+    }
   }
 
   .recall-form__block-4 {
     width: 648px;
     height: 189px;
     margin-bottom: 42px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      right: 0;
+      top: -60px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      left: 0;
+      top: -60px;
+      background-color: #dbdbdb;
+    }
   }
 
   .recall-form__block-5 {
     width: 648px;
     height: 320px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      right: 0;
+      top: -40px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      left: 0;
+      top: -40px;
+      background-color: #dbdbdb;
+    }
   }
 
   .recall-form__describe {
@@ -343,42 +403,94 @@
     padding: 0 120px;
   }
 
+  .recall-form__item {
+    width: 480px;
+  }
+
+  .recall-form__contact-input {
+    width: 398px;
+  }
+
+  .recall-form__data-contacts {
+    width: 312px;
+  }
+
+  .recall-form__list-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recall-form__image {
+    bottom: 0;
+    left: 285px;
+  }
+
+  .recall-form__info:not(:last-child) {
+    margin-bottom: 56px;
+  }
+
   .recall-form__block-1 {
     width: 480px;
     height: 338px;
-    margin-bottom: 56px;
   }
 
   .recall-form__block-2 {
     width: 480px;
     height: 338px;
-    margin-bottom: 56px;
   }
 
   .recall-form__block-3 {
     width: 960px;
     height: 134px;
-    margin-bottom: 56px;
   }
 
   .recall-form__block-4 {
     width: 960px;
     height: 189px;
-    margin-bottom: 56px;
   }
 
   .recall-form__block-5 {
     width: 960px;
     height: 320px;
-    margin-bottom: 64px;
   }
 
   .recall-form__describe {
     width: 736px;
     height: 128px;
+    margin: 0 auto;
+    margin-bottom: 48px;
   }
 
   .recall-form__title {
     margin-bottom: 28px;
+  }
+
+  .recall-form__block-3::after {
+    width: 280px;
+  }
+
+  .recall-form__block-3::before {
+    width: 280px;
+  }
+
+  .recall-form__block-4::after {
+    width: 280px;
+  }
+
+  .recall-form__block-4::before {
+    width: 280px;
+  }
+
+  .recall-form__block-5::after {
+    width: 280px;
+  }
+
+  .recall-form__block-5::before {
+    width: 280px;
+  }
+
+  .recall-form__info-wrapper {
+    width: 768px;
+    margin: 0 auto;
   }
 }
