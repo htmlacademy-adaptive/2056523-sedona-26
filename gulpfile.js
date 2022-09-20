@@ -5,6 +5,8 @@ import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstory from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
@@ -38,7 +40,38 @@ export const html = () => {
 export const images = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
-  .pipe(gulp.dest(build/img));
+  .pipe(gulp.dest('build/img'));
+}
+
+//WrbP
+
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+
+  .pipe(squoosh({
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img'));
+}
+
+//SVG
+
+export const svg = () => {
+  gulp.src(['source/img/*.svg', '!source/img/icon/*.svg'])
+
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'));
+}
+
+export const sprite = () => {
+  return gulp.src('source/img/icon/*.svg')
+
+  .pipe(svgo())
+  .pipe(svgstory({
+    inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
 }
 
 // Server
