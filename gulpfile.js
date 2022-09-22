@@ -10,6 +10,7 @@ import svgstory from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
+import del from 'del';
 
 // Styles
 
@@ -87,6 +88,12 @@ function server(done) {
   });
   done();
 }
+
+//Clean
+
+export const clean = () => {
+  return del('build');
+};
 
 // Watcher
 
