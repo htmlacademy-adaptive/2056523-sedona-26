@@ -109,8 +109,7 @@ export const build = gulp.series (
     svg,
     sprite,
     createWebp
-  ),
-);
+  ));
 
 
 // Defoult
