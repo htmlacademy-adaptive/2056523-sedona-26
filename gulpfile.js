@@ -10,7 +10,6 @@ import svgstory from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import copy from 'copy';
 import terser from 'gulp-terser';
 import {deleteAsync} from 'del';
 
@@ -38,12 +37,25 @@ const html = () => {
   .pipe(gulp.dest('build'));
 }
 
+//Scripts
+
+const scripts = () => {
+  return gulp.src('source/js/script.js')
+  .pipe (gulp.dest('build/js'))
+  .pipe(browser.stream());
+}
+
 //Images
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(gulp.dest('build/img'))
 }
 
 //WrbP
