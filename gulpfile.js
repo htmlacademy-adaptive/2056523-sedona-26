@@ -10,7 +10,9 @@ import svgstory from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import del from 'del';
+import copy from 'copy';
+import terser from 'gulp-terser';
+import {deleteAsync} from 'del';
 
 // Styles
 
@@ -38,7 +40,7 @@ const html = () => {
 
 //Images
 
-const images = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
@@ -75,6 +77,7 @@ const sprite = () => {
   .pipe(gulp.dest('build/img'));
 }
 
+
 // Server
 
 function server(done) {
@@ -89,10 +92,23 @@ function server(done) {
   done();
 }
 
+//Copy
+
+export const copy = (done) => {
+  gulp.src([
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+  ], {
+    base: 'source'
+  })
+  .pipe(gulp.dest('build'))
+  done();
+}
+
 //Clean
 
 export const clean = () => {
-  return del('build');
+  return deleteAsync('build');
 };
 
 // Watcher
