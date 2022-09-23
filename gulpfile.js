@@ -6,7 +6,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstory from 'gulp-svgstore';
+import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
@@ -32,15 +32,14 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-
-  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 }
 
 //Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/script.js')
+  return gulp.src('source/js/**.js')
   .pipe (gulp.dest('build/js'))
   .pipe(browser.stream());
 }
@@ -55,14 +54,13 @@ const optimizeImages = () => {
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
 }
 
 //WrbP
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-
   .pipe(squoosh({
     webp: {}
   }))
@@ -73,16 +71,14 @@ const createWebp = () => {
 
 const svg = () => {
   gulp.src(['source/img/*.svg', '!source/img/icon/*.svg'])
-
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
 
 const sprite = () => {
   return gulp.src('source/img/icon/*.svg')
-
   .pipe(svgo())
-  .pipe(svgstory({
+  .pipe(svgstore({
     inlineSvg: true
   }))
   .pipe(rename('sprite.svg'))
@@ -92,7 +88,7 @@ const sprite = () => {
 
 // Server
 
-function server(done) {
+const server = (done) => {
   browser.init({
     server: {
       baseDir: 'build'
@@ -104,9 +100,17 @@ function server(done) {
   done();
 }
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
+
 //Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
@@ -128,7 +132,6 @@ export const clean = () => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
-  gulp.watch('sourse/js/script.js', gulp.series(scripts));
 }
 
 //Build
@@ -140,11 +143,11 @@ export const build = gulp.series (
   gulp.parallel(
     styles,
     html,
-    scripts,
     svg,
     sprite,
     createWebp
-  ));
+  ),
+);
 
 
 // Defoult
@@ -156,7 +159,6 @@ export default gulp.series (
   gulp.parallel(
     styles,
     html,
-    scripts,
     svg,
     sprite,
     createWebp
@@ -164,4 +166,5 @@ export default gulp.series (
   gulp.series(
     server,
     watcher
-));
+  )
+);
