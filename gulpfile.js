@@ -10,7 +10,6 @@ import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import terser from 'gulp-terser';
 import {deleteAsync} from 'del';
 
 // Styles
@@ -70,7 +69,7 @@ const createWebp = () => {
 //SVG
 
 const svg = () => {
-  gulp.src(['source/img/*.svg', '!source/img/icon/*.svg'])
+  return gulp.src(['source/img/*.svg', '!source/img/icon/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
